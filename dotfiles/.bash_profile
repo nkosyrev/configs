@@ -37,10 +37,10 @@ export LSCOLORS="GxFxCxDxBxegedabagaced"
 
 alias gnetstat="sudo lsof -i -nP"
 alias rm-broken-links="find -L . -type l | xargs -t -I {} rm {}"
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -lAht'
 
-alias grep="grep --color=always"
+alias grepc="grep --color=always"
 alias php-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
 alias php-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
 alias nginx-stop="sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist"
