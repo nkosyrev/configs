@@ -7,7 +7,7 @@
 
 [core]
 	autocrlf = input
-	editor = nano
+	editor = vim 
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore
 

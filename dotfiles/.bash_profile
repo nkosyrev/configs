@@ -43,8 +43,11 @@ alias la='ls -lAht'
 alias grepc="grep --color=always"
 alias php-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
 alias php-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
+alias php-restart="php-stop && php-start"
 alias nginx-stop="sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist"
 alias nginx-start="sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist"
 
 alias hidden-files-show="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder;"
 alias hidden-files-hide="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder;"
+
+alias vihosts="sudo vim /etc/hosts"
