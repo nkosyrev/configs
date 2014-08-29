@@ -65,3 +65,5 @@ alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/defaul
 
 alias postgres.start='launchctl load -w /usr/local/Cellar/postgresql/9.3.5_1/homebrew.mxcl.postgresql.plist'
 alias postgres.stop='launchctl unload -w /usr/local/Cellar/postgresql/9.3.5_1/homebrew.mxcl.postgresql.plist'
+
+alias add-delimeter-to-dock="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock"
