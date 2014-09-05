@@ -46,7 +46,7 @@ alias hidden-files-hide="defaults write com.apple.finder AppleShowAllFiles -bool
 
 alias vihosts="sudo vim /etc/hosts"
 
-alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.start='sudo nginx -t && sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.restart='nginx.stop && nginx.start'
 
@@ -65,5 +65,8 @@ alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/defaul
 
 alias postgres.start='launchctl load -w /usr/local/Cellar/postgresql/9.3.5_1/homebrew.mxcl.postgresql.plist'
 alias postgres.stop='launchctl unload -w /usr/local/Cellar/postgresql/9.3.5_1/homebrew.mxcl.postgresql.plist'
+alias postgres.restart='postgres.stop & postgres.start'
 
 alias add-delimeter-to-dock="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock"
+
+# https://www.modern.ie/en-us/virtualization-tools#downloads

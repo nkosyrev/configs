@@ -15,7 +15,6 @@
 	requireForce = true
 
 [branch]
-	autosetuprebase = always
 
 [help]
 	autocorrect = 1
@@ -24,7 +23,7 @@
 	whitespace = fix
 
 [github]
-	user = alexeyshockov
+	user = andrey-borue
 
 [sendemail]
 	smtpserver = smtp.gmail.com

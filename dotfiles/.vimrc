@@ -99,7 +99,7 @@ set termencoding=utf-8
 " Формат файла по умолчанию
 set fileformat=unix
 " Формат файла, который влияет на окончания строк — будет перебирать в указанном порядке
-set ffs=mac,unix,dos
+" set ffs=mac,unix,dos
 " Список кодировок файлов для авто-определения
 set fileencodings=utf-8,koi8-r,cp1251,cp866
 
