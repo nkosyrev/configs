@@ -1,6 +1,8 @@
 unset PROMPT_COMMAND
 
 export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # All variables below may be setted by LC_ALL.
 export LC_COLLATE="C"
 export LC_CTYPE="UTF-8"
@@ -68,5 +70,8 @@ alias postgres.stop='launchctl unload -w /usr/local/Cellar/postgresql/9.3.5_1/ho
 alias postgres.restart='postgres.stop & postgres.start'
 
 alias add-delimeter-to-dock="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock"
+
+
+source ~/web/symfony2-autocomplete/symfony2-autocomplete.bash
 
 # https://www.modern.ie/en-us/virtualization-tools#downloads
